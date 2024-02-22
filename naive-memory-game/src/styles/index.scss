@@ -1,0 +1,55 @@
+body { background-color: #123; }
+
+#game {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  height: 200px;
+  margin: 20px;
+  width: 200px;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-show .card-inner {
+  transform: rotateY(-180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.card-back {
+  transform: rotateY(-180deg);
+}
+
+@for $i from 0 through 15 {
+  .card-#{$i} {
+    background-image: url("http://localhost:8111/svg/#{$i}/200");
+  }
+}

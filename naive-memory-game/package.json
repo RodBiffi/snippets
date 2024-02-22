@@ -1,0 +1,31 @@
+{
+  "name": "naive-memory-game",
+  "version": "1.0.0",
+  "description": "Vanilla JS memory game",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.config.js --watch --colors"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.0",
+    "lodash": "^4.17.15",
+    "webpack-cli": "^3.3.11"
+  }
+}
