@@ -1,0 +1,19 @@
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell {
+  padding: 10px 10px;
+  word-break: break-word;
+}
+
+.MuiDataGrid-root {
+  border-style: none;
+}
+
+.MuiDataGrid-root .MuiDataGrid-withBorderColor {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+

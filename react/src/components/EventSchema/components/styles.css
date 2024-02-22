@@ -1,0 +1,9 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chips > li:not(:last-of-type) {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}

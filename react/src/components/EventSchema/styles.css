@@ -1,0 +1,11 @@
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.schema-list > li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
